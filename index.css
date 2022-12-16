@@ -15,11 +15,20 @@
   height: 1.25rem;
 }
 
+.intro-text {
+  text-shadow: 1px 1px 5px black;
+}
+
+.specific-text {
+  text-shadow: 1px 1px 5px darkred;
+}
+
 .heading-text {
   font-weight: 500;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  text-shadow: 1px 1px 5px dblackarkred;
 }
 
 .img-author {
@@ -31,6 +40,7 @@
 }
 
 .card {
+  text-shadow: 1px 1px 5px black;
   background-color: rgba(113, 231, 255, 0.1);
   box-shadow: 0px 0px 32px rgba(113, 231, 255, 0.2);
 }
@@ -39,9 +49,11 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  text-shadow: 1px 1px 5px black;
 }
 
 .my-skills-section {
+  text-shadow: 1px 1px 5px black;
   height: 33rem;
 }
 
