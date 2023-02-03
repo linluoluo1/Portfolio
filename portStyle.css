@@ -1,0 +1,25 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: url("./img/bg-2.jpg");
+  font-family: "Poppins";
+}
+.wrapper .contact-links img {
+  width: 2rem;
+  margin-right: 0.5rem;
+}
+.wrapper .contact-links img:hover {
+  transform: scale(1.2);
+}
+.wrapper .soc-links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.wrapper .soc-links a {
+  text-decoration: none;
+  color: aliceblue;
+}
+.wrapper .soc-links a:hover {
+  text-shadow: 1px 1px 5px darkred;
+}/*# sourceMappingURL=portStyle.css.map */

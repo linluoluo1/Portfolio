@@ -1,0 +1,28 @@
+.wrapper {
+  width: 100%;
+  height: 100%;
+  background-image: url("./img/bg-2.jpg");
+
+  font-family: "Poppins";
+
+  .contact-links img {
+    width: 2rem;
+    margin-right: 0.5rem;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .soc-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    a {
+      text-decoration: none;
+      color: aliceblue;
+      &:hover {
+        text-shadow: 1px 1px 5px darkred;
+      }
+    }
+  }
+}

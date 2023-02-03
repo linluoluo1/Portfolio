@@ -3,208 +3,414 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="index.scss" />
     <link rel="stylesheet" href="index.css" />
     <link rel="icon" type="image/ico" href="./free-icon-muscle-1845861.png" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
     <title>Personal website</title>
   </head>
   <body>
     <div class="wrapper">
-  
-    <div class="body-wrapper">
+      <div class="body-wrapper">
+        <!-- NAvbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark pt-3">
+          <div class="container">
+            <a class="navbar-brand text-white" href="index.html"
+              >Frontend Developer</a
+            >
 
-    
-    <!-- NAvbar -->
-    <nav class="navbar  navbar-expand-lg bg-dark  navbar-dark pt-3">
-      <div class="container">
-        <a class="navbar-brand text-white" href="index.html"
-          >Frontend Developer</a>
-        <!-- <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navmenu">
-          <span class="navbar-toggler-icon"></span>
-        </button> -->
-        <!-- <div class="collapse navbar-collapse" id="navmenu">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="#main">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contacts">Contacts</a>
-            </li>
-          </ul>
-        </div> -->
-      </div>
-    </nav>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark hover:" href="#portfolio"
+                  >Portfolio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark hover:" href="#contacts"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </div>
+        </nav>
 
-    <!-- Maininfo -->
+        <!-- Maininfo -->
 
-    <section class=" text-light p-0 pt-4 text-center ">
-        <div class="container">
-            <div class=" d-sm-flex justify-content-around">
-                <div class=" intro-text my-auto">
-                    <h1 >My name is Utianskaia Daria</h1>
-                    <h2 >I am a <span class="specific-text">Front-End Developer,</span></h2>
+        <section class="text-black p-0 pt-4 text-center main-info">
+          <div class="container">
+            <div class="d-sm-flex justify-content-around">
+              <div class="intro-text my-auto">
+                <h1>My name is Utianskaia Daria</h1>
+                <h2>
+                  I am a <span class="specific-text">Front-End Developer,</span>
+                </h2>
 
-                    <p  class="heading-text pt-4 ">
-                    A young, enthusiastic engineer, who has enough courage and ambitions to achieve new results and face new challenges. 
-                    Nice to meet you!
+                <p class="heading-text pt-4">
+                  A young, enthusiastic engineer, who has enough courage and
+                  ambitions to achieve new results and face new challenges. Nice
+                  to meet you!
+                </p>
+              </div>
+              <img
+                class="img-author ms-5"
+                src="./img/AuthorPhoto.png"
+                alt="AuthorPhoto"
+              />
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills boxes -->
+
+        <section class="p-5 skills-sect">
+          <div class="container">
+            <div class="row text-center mx-auto justify-content-between">
+              <div class="col-md mb-4">
+                <div
+                  class="card border-0 text-black mx-auto"
+                  style="width: 12rem"
+                >
+                  <img
+                    src="./img/adaptation.png"
+                    class="card-img card-img-top w-50 mx-auto mt-3 mb-2"
+                    alt="adaptation"
+                  />
+                  Adaptivity
+                  <div class="card-body p-0 pt-3">
+                    <p class="card-text text-black p-2 pb-3">
+                      Whether there is a new team or a new project, it does not
+                      matter to me, because I adapt to new conditions very fast.
                     </p>
+                  </div>
                 </div>
-                <img class=" img-author ms-5 " src="./img/AuthorPhoto.png" alt="AuthorPhoto">
+              </div>
+
+              <div class="col-md mb-4">
+                <div
+                  class="card border-0 text-black mx-auto"
+                  style="width: 12rem"
+                >
+                  <img
+                    src="./img/networking.png"
+                    class="card-img card-img-top w-50 mx-auto mt-3 mb-2"
+                    alt="networking"
+                  />
+                  Soft skills
+                  <div class="card-body p-0 pt-3">
+                    <p class="card-text text-black p-2 pb-3">
+                      A nice and comfortable teamwork atmosphere is one of the
+                      most important things to me at work.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md">
+                <div
+                  class="card border-0 k text-black mx-auto"
+                  style="width: 12rem"
+                >
+                  <img
+                    src="./img/deadline.png"
+                    class="card-img card-img-top w-50 mx-auto mt-3 mb-2"
+                    alt="speed"
+                  />
+                  Speed
+                  <div class="card-body p-0 pt-3">
+                    <p class="card-text text-black p-2 pb-3">
+                      Working in a fast-paced environment for me is a dream. I
+                      like changing tasks, brainstorms, well-defined plans, etc.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-        </div>
-    </section>
+          </div>
+        </section>
 
-    <!-- Skills boxes -->
+        <!-- What i am working with -->
 
-    <section class="p-5   bg-dark ">
-        <div class="container">
-            <div class="row text-center mx-auto  justify-content-between">
+        <div class="my-skills-section section mb-4" id="skills">
+          <h2 class="h3 pb-2 pt-3 text-black text-center skills-heading">
+            My skills and knowledges:
+          </h2>
+          <div class="text-cloud text-black pt-3">
+            <div class="hard-skills">
+              <div class="skill-1 skills">
+                <img src="./img/visual-studio.png" alt="visual-studio" />
+                <p>Visual studio code</p>
+              </div>
 
-                <div class="col-md mb-4 ">
-                    <div class="card  border-0  text-white mx-auto" style="width: 12rem;">
-                        <img src="./img/adaptation.png" class="card-img card-img-top  w-50 mx-auto mt-3 mb-2 " alt="adaptation">
-                        Adaptivity
-                        <div class="card-body p-0 pt-3 ">
-                          <p class="card-text  text-white p-2 pb-3 ">Whether there a new team or a new project, it does not matter to me, because I adapt to a new conditions very fast.</p>
-                        </div>
-                      </div>
-                </div>
+              <div class="skill-2 skills">
+                <img src="./img/coding.png" alt="visual-studio" />
+                <p>HTML&CSS</p>
+              </div>
 
-                <div class="col-md mb-4">
-                    <div class="card border-0  text-white mx-auto " style="width: 12rem;">
-                        <img src="./img/networking.png" class="card-img card-img-top  w-50 mx-auto mt-3 mb-2" alt="networking">
-                        Soft skills
-                        <div class="card-body p-0 pt-3">
-                          <p class="card-text  text-white p-2  pb-3">Nica and comfortable teamwork atmosphere is one of the most important things to me at work.</p>
-                        </div>
-                      </div>
-                </div>
+              <div class="skill-3 skills">
+                <img src="./img/sass.png" alt="visual-studio" />
+                <p>SCSS</p>
+              </div>
 
-                <div class="col-md">
-                    <div class="card border-0 k text-white mx-auto" style="width: 12rem;">
-                        <img src="./img/deadline.png" class="card-img card-img-top w-50 mx-auto mt-3 mb-2" alt="speed">
-                        Speed
-                        <div class="card-body p-0 pt-3">
-                          <p class="card-text   text-white p-2 pb-3">Working in fast-pased environment for me is a dream. I like changing tasks, brainstorms, well-defined plans etc.  </p>
-                        </div>
-                      </div>
-                </div>
+              <div class="skill-5 skills">
+                <img src="./img/js.png" alt="visual-studio" />
+                <p>JavaScript</p>
+              </div>
 
+              <div class="skill-4 skills">
+                <img src="./img/bootstrap.png" alt="visual-studio" />
+                <p>Bootstrap</p>
+              </div>
+
+              <div class="skill-four skills">
+                <img src="./img/tailwind.png" alt="visual-studio" />
+                <p>Tailwind</p>
+              </div>
+
+              <div class="skill-6 skills">
+                <img src="./img/atom.png" alt="visual-studio" />
+                <p>ReactJS</p>
+              </div>
+
+              <div class="skill-7 skills">
+                <img src="./img/node-js.png" alt="visual-studio" />
+                <p>NodeJS</p>
+              </div>
+
+              <div class="skill-8 skills">
+                <img
+                  class="need-to-invert"
+                  src="./img/api.png"
+                  alt="visual-studio"
+                />
+                <p>Fetch API</p>
+              </div>
+
+              <div class="skill-8 skills">
+                <img src="./img/git.png" alt="git" />
+                <p>GIT</p>
+              </div>
             </div>
+
+            <div class="soft-skills">
+              <div class="skill-9 skills">
+                <img src="./img/work-process.png" alt="visual-studio" />
+                <p>Time management</p>
+              </div>
+
+              <div class="skill-10 skills">
+                <img src="./img/partners.png" alt="visual-studio" />
+                <p>Collaboration</p>
+              </div>
+
+              <div class="skill-11 skills">
+                <img src="./img/creativity.png" alt="visual-studio" />
+                <p>Creativity</p>
+              </div>
+
+              <div class="skill-12 skills">
+                <img src="./img/decision-tree.png" alt="visual-studio" />
+                <p>Decision-making</p>
+              </div>
+
+              <div class="skill-13 skills">
+                <img src="./img/problem-solved.png" alt="visual-studio" />
+                <p>Problem-solving</p>
+              </div>
+
+              <div class="skill-14 skills">
+                <img src="./img/empathy.png" alt="visual-studio" />
+                <p>Empathy</p>
+              </div>
+
+              <div class="skill-15 skills">
+                <img src="./img/positive-review.png" alt="visual-studio" />
+                <p>Positivity</p>
+              </div>
+
+              <div class="skill-16 skills">
+                <img
+                  class="need-to-invert"
+                  src="./img/russian.png"
+                  alt="visual-studio"
+                />
+                <p>Russian languange</p>
+              </div>
+              <div class="skill-17 skills">
+                <img
+                  class="need-to-invert"
+                  src="./img/language.png"
+                  alt="visual-studio"
+                />
+                <p>English languange</p>
+              </div>
+              <div class="skill-18 skills">
+                <img
+                  class="need-to-invert"
+                  src="./img/chat.png"
+                  alt="visual-studio"
+                />
+                <p>Chinese languange</p>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
 
-    <!-- What i am working with -->
-    
-    <div class=" my-skills-section section">
-      <p class=" h3  mb-2 text-white text-center skills-heading">My skills and knowledge:  </p>
-      <div class="text-cloud pt-3">
+        <!-- Portfolio Section -->
+        <div class="projects-wrapper mb-4">
+          <h2 id="portfolio" class="text-center my-4">Portfolio</h2>
+          <!-- First project -->
+          <section class="project-1 prjcts ml-4 mt-4">
+            <h2 class="text-black pl-5 mb-4">Adventure awaits</h2>
+            <div class="d-flex align-items-center">
+              <video controls class="w-50 mr-5">
+                <source
+                  src="./video/React App - Google Chrome 2022-08-11 09-52-23.mp4"
+                  type="video/mp4"
+                />
+              </video>
+              <p class="text-black text-center">
+                Website about travelling. Was built with ReactJS, HTML, CSS.
+              </p>
+            </div>
+          </section>
+          <!-- Second project -->
+          <section class="project-2 prjcts mr-4 mt-4">
+            <h2 class="text-black text-right pr-5 mb-4">Invasive species</h2>
+            <div class="d-flex align-items-center flex-row-reverse">
+              <!-- Make a carousel of photos -->
 
-        <div class='skill-1 skills'>
-<img src="./img/visual-studio.png" alt="visual-studio">
-<p class="text-white"> Visual studio code</p>
+              <div class="img-carousel-1 d-flex flex-row overflow-auto">
+                <img
+                  src="./img/game/Game_page-0001.jpg"
+                  alt="game"
+                  class="ml-5"
+                />
+                <img
+                  src="./img/game/Game_page-0002.jpg"
+                  alt="game"
+                  class="ml-5"
+                />
+                <img
+                  src="./img/game/Game_page-0003.jpg"
+                  alt="game"
+                  class="ml-5"
+                />
+                <img
+                  src="./img/game/Game_page-0004.jpg"
+                  alt="game"
+                  class="ml-5"
+                />
+                <img
+                  src="./img/game/Game_page-0005.jpg"
+                  alt="game"
+                  class="ml-5"
+                />
+              </div>
+              <!-- end of carousel -->
+              <p class="text-black text-center mr-5">
+                Interactive game about invasive species. Was build with
+                HTML/SCSS.
+              </p>
+            </div>
+          </section>
+          <!-- Third project -->
+          <section class="project-3 prjcts ml-4 mt-4">
+            <h2 class="text-black text-left pl-5 mb-4">DiscUs</h2>
+            <div class="d-flex align-items-center flex-row">
+              <!-- Make a carousel of photos -->
+              <div class="img-carousel-2 d-flex flex-row overflow-auto">
+                <img
+                  src="./img/chatapp/1_page-0001.jpg"
+                  alt="game"
+                  class="mr-5"
+                />
+                <img
+                  src="./img/chatapp/DiscUs_page-0001.jpg"
+                  alt="game"
+                  class="mr-5"
+                />
+                <img
+                  src="./img/chatapp/2_page-0001.jpg"
+                  alt="game"
+                  class="mr-5"
+                />
+              </div>
+              <!-- end of carousel -->
+              <p class="text-black text-center ml-5">
+                Neat and simple messager was built with ReactJs and CSS.
+              </p>
+            </div>
+          </section>
         </div>
 
-        <div class='skill-2 skills'>
-<img src="./img/coding.png" alt="visual-studio">
-<p class="text-white"> HTML&CSS</p>
-        </div>
+        <!-- Portgolio ends -->
 
-        <div class='skill-3 skills'>
-          <img src="./img/sass.png" alt="visual-studio">
-          <p class="text-white"> Scss</p>
-        </div>
+        <!-- Contacts -->
+        <section
+          class="bg-dark p-5 contact-links text-white d-flex justify-content-around"
+          id="contacts"
+        >
+          <div class="Email soc-links">
+            <div class="d-flex">
+              <a href="mailto:utianskaiadv1996@gmail.com"
+                ><img src="./img/gmail.png" alt="mail"
+              /></a>
+              <h4>Email:</h4>
+            </div>
 
-        <div class='skill-4 skills'>
-          <img src="./img/bootstrap.png" alt="visual-studio">
-          <p class="text-white"> Bootstrap</p>
-        </div>
+            <a href="mailto:utianskaiadv1996@gmail.com"
+              >utianskaiadv1996@gmail.com</a
+            >
+          </div>
 
-   <div class='skill-5 skills'>
-<img src="./img/js.png" alt="visual-studio">
-<p class="text-white"> JavaScript</p>
-        </div>
+          <div class="Linkedin soc-links">
+            <div class="d-flex">
+              <a href="https://www.linkedin.com/in/daria-utianskaia-07502b22b/"
+                ><img src="./img/linkedin (2).png" alt="linkedin"
+              /></a>
+              <h4>LinkedIn:</h4>
+            </div>
 
-        <div class='skill-6 skills'>
-<img src="./img/atom.png" alt="visual-studio">
-<p class="text-white"> ReactJS</p>
-        </div>
+            <a href="https://www.linkedin.com/in/daria-utianskaia-07502b22b/"
+              >Daria Utianskaia</a
+            >
+          </div>
 
-        <div class='skill-7 skills'>
-          <img src="./img/node-js.png" alt="visual-studio">
-          <p class="text-white"> NodeJS</p>
-        </div>
+          <div class="SocialMedia soc-links">
+            <div class="d-flex">
+              <img src="./img/whatsapp (2).png" alt="whatsapp" />
+              <img src="./img/telegram (2).png" alt="telegram" />
+              <h4>WhatsApp/Telegram</h4>
+            </div>
 
-        <div class='skill-8 skills'>
-          <img class="need-to-invert" src="./img/api.png" alt="visual-studio">
-          <p class="text-white"> Fetch API</p>
-        </div>
-
-        <div class='skill-9 skills'>
-          <img src="./img/work-process.png" alt="visual-studio">
-          <p class="text-white"> Time management</p>
-                  </div>
-          
-                  <div class='skill-10 skills'>
-          <img src="./img/partners.png" alt="visual-studio">
-          <p class="text-white">Collaboration </p>
-                  </div>
-          
-                  <div class='skill-11 skills'>
-                    <img src="./img/creativity.png" alt="visual-studio">
-                    <p class="text-white"> Creativity</p>
-                  </div>
-          
-                  <div class='skill-12 skills'>
-                    <img src="./img/decision-tree.png" alt="visual-studio">
-                    <p class="text-white"> Decision-making</p>
-                  </div>
-          
-             <div class='skill-13 skills'>
-          <img src="./img/problem-solved.png" alt="visual-studio">
-          <p class="text-white"> Problem-solving</p>
-                  </div>
-          
-                  <div class='skill-14 skills'>
-          <img src="./img/empathy.png" alt="visual-studio">
-          <p class="text-white"> Empathy</p>
-                  </div>
-          
-                  <div class='skill-15 skills'>
-                    <img src="./img/positive-review.png" alt="visual-studio">
-                    <p class="text-white"> Positivity</p>
-                  </div>
-          
-                  <div class='skill-16 skills'>
-                    <img class="need-to-invert" src="./img/russian.png" alt="visual-studio">
-                    <p class="text-white"> Russian languange</p>
-                  </div>
-                  <div class='skill-17 skills'>
-                    <img class="need-to-invert"  src="./img/language.png" alt="visual-studio">
-                    <p class="text-white"> English languange</p>
-                  </div>
-                  <div class='skill-18 skills'>
-                    <img class="need-to-invert"  src="./img/chat.png" alt="visual-studio">
-                    <p class="text-white"> Chinese languange</p>
-                  </div>
+            <a href="tel:+79774603910">+79774603910</a>
+          </div>
+        </section>
       </div>
     </div>
-  </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"
     ></script>
-
   </body>
 </html>

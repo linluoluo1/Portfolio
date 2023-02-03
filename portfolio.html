@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="portStyle.scss" />
+    <link rel="stylesheet" href="portStyle.css" />
+    <link rel="icon" type="image/ico" href="./free-icon-muscle-1845861.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+  </head>
+  <body class="wrapper">
+    <!-- Navigation -->
+    <!-- NAvbar -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark pt-3">
+      <div class="container">
+        <a class="navbar-brand text-white" href="index.html"
+          >Frontend Developer</a
+        >
+
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacts">Contacts</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="projects-wrapper">
+      <!-- First project -->
+      <section class="project-1 ml-4 mt-4">
+        <h2 class="text-black pl-5">Adventure awaits</h2>
+        <div class="d-flex align-items-center">
+          <video controls class="w-50 mr-5">
+            <source
+              src="./video/React App - Google Chrome 2022-08-11 09-52-23.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <p class="text-black text-center">
+            Website about travelling. Was built with ReactJS, HTML, CSS.
+          </p>
+        </div>
+      </section>
+      <!-- Second project -->
+      <section class="project-2 mr-4 mt-4">
+        <h2 class="text-black text-right pr-5">Invasive species</h2>
+        <div class="d-flex align-items-center flex-row-reverse">
+          <!-- Make a carousel of photos -->
+          <img
+            src="./img/game/Game_page-0001.jpg"
+            alt="game"
+            class="w-50 ml-5"
+          />
+          <img
+            src="./img/game/Game_page-0002.jpg"
+            alt="game"
+            class="w-50 d-none ml-5"
+          />
+          <img
+            src="./img/game/Game_page-0003.jpg"
+            alt="game"
+            class="w-50 d-none ml-5"
+          />
+          <img
+            src="./img/game/Game_page-0004.jpg"
+            alt="game"
+            class="w-50 d-none ml-5"
+          />
+          <img
+            src="./img/game/Game_page-0005.jpg"
+            alt="game"
+            class="w-50 d-none ml-5"
+          />
+          <p class="text-black text-center">
+            Interactive game about invasive species. Was build with HTML/SCSS.
+          </p>
+        </div>
+      </section>
+      <!-- Third project -->
+      <section class="project-3 ml-4 mt-4">
+        <h2 class="text-black text-left pl-5">DiscUs</h2>
+        <div class="d-flex flex-row align-items-center flex-row">
+          <!-- Make a carousel of photos -->
+          <img
+            src="./img/chatapp/1_page-0001.jpg"
+            alt="game"
+            class="w-50 mr-5"
+          />
+          <img
+            src="./img/chatapp/DiscUs_page-0001.jpg"
+            alt="game"
+            class="w-50 mr-5"
+          />
+          <img
+            src="./img/chatapp/2_page-0001.jpg"
+            alt="game"
+            class="w-50 mr-5"
+          />
+          <p class="text-black text-center">
+            Neat and simple messager was buil with ReactJs and CSS.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <!-- Contacts -->
+    <section
+      class="bg-dark p-5 contact-links text-white d-flex justify-content-around"
+      id="contacts"
+    >
+      <div class="Email soc-links">
+        <div class="d-flex">
+          <a href="mailto:utianskaiadv1996@gmail.com"
+            ><img src="./img/gmail.png" alt="mail"
+          /></a>
+          <h4>Email:</h4>
+        </div>
+
+        <a href="mailto:utianskaiadv1996@gmail.com"
+          >utianskaiadv1996@gmail.com</a
+        >
+      </div>
+
+      <div class="Linkedin soc-links">
+        <div class="d-flex">
+          <a href="https://www.linkedin.com/in/daria-utianskaia-07502b22b/"
+            ><img src="./img/linkedin (2).png" alt="linkedin"
+          /></a>
+          <h4>LinkedIn:</h4>
+        </div>
+
+        <a href="https://www.linkedin.com/in/daria-utianskaia-07502b22b/"
+          >Daria Utianskaia</a
+        >
+      </div>
+
+      <div class="SocialMedia soc-links">
+        <div class="d-flex">
+          <img src="./img/whatsapp (2).png" alt="whatsapp" />
+          <img src="./img/telegram (2).png" alt="telegram" />
+          <h4>WhatsApp/Telegram</h4>
+        </div>
+
+        <a href="tel:+79774603910">+79774603910</a>
+      </div>
+    </section>
+  </body>
+</html>
