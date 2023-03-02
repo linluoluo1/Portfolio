@@ -30,16 +30,16 @@
       <div class="body-wrapper">
         <!-- NAvbar -->
         <nav class="navbar navbar-expand-lg navbar- bg-white pt-3">
-          <div class="container">
+          <div class="container flex-column justify-content-center">
             <a class="navbar-brand text-light" href="index.html"
               >Frontend Developer</a
             >
 
-            <ul class="navbar-nav ms-auto">
+            <ul class="navbar-nav ms-auto flex-row">
               <li class="nav-item">
                 <a class="nav-link text-dark" href="#skills">Skills</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item mx-4">
                 <a class="nav-link text-dark hover:" href="#portfolio"
                   >Portfolio</a
                 >
@@ -83,6 +83,15 @@
 
         <section class="p-5 skills-sect">
           <div class="container">
+            <!-- Short skills for small screens -->
+            <div class=" short-strengths text-center">
+              <h2>My absolute strengths are:</h2>
+              <ul class="list-unstyled">
+                <li><span class="text-white mx-1">&#149</span>Adaptivity</li>
+                <li><span class="text-white mx-1">&#149</span>Soft-skills</li>
+                <li><span class="text-white mx-1">&#149</span>Decision-making</li>
+              </ul>
+            </div>
             <div class="row text-center mx-auto justify-content-between">
               <div class="col-md mb-4">
                 <div
@@ -134,11 +143,11 @@
                     class="card-img card-img-top w-50 mx-auto mt-3 mb-2"
                     alt="speed"
                   />
-                  Speed
+                  Decision-making
                   <div class="card-body p-0 pt-3">
                     <p class="card-text text-black p-2 pb-3">
-                      Working in a fast-paced environment for me is a dream. I
-                      like changing tasks, brainstorms, well-defined plans, etc.
+                      I use my skills to solve every problem with customized
+                      approach and make rational and informed decisions.
                     </p>
                   </div>
                 </div>
@@ -149,11 +158,11 @@
 
         <!-- What i am working with -->
 
-        <div class="my-skills-section section mb-4" id="skills">
+        <div class="my-skills-section  container section mb-4" id="skills">
           <h2 class="h3 pb-2 pt-3 text-black text-center skills-heading">
             My skills and knowledges:
           </h2>
-          <div class="text-cloud text-black pt-3">
+          <div class=" text-cloud text-black pt-3">
             <div class="hard-skills">
               <div class="skill-1 skills">
                 <img src="./img/visual-studio.png" alt="visual-studio" />
@@ -276,7 +285,33 @@
 
         <!-- Portfolio Section -->
         <div class="projects-wrapper mb-4">
-          <h2 id="portfolio" class="text-center my-4">Portfolio</h2>
+          <h2 id="portfolio" class="text-center mt-4 mb-2">Portfolio</h2>
+          <!-- New project -->
+          <section class="project-2 prjcts mr-4 mt-4">
+            <h2 class="text-black text-right mr-4 mb-4">Open Heart</h2>
+            <div class="d-flex align-items-center flex-row">
+              <!-- end of carousel -->
+              <p class="text-black text-center mx-auto mw-40 w-50">
+                Responsive website about charity for dog shelter. Inspired by
+                Balinese dogs and their problems. <br />
+                Was built with HTML, Tailwind, JS. <br />
+                <a href="https://linluoluo1.github.io/Open-Heart/">Check it</a>
+              </p>
+
+              <!-- Make a carousel of photos -->
+
+              <div
+                class="img-carousel-3 d-flex justify-content-center overflow-auto img-carousel"
+              >
+                <img
+                  src="./img/OpenHeart.jpg"
+                  alt="game"
+                  class="startuper px-10"
+                />
+              </div>
+            </div>
+          </section>
+
           <!-- First project -->
           <section class="project-2 prjcts mr-4 mt-4">
             <h2 class="text-black text-left pl-5 mb-4">StartUper</h2>
@@ -284,7 +319,7 @@
               <!-- Make a carousel of photos -->
 
               <div
-                class="img-carousel-3 d-flex justify-content-center overflow-auto"
+                class="img-carousel-3 img-carousel d-flex justify-content-center overflow-auto"
               >
                 <img
                   src="./img/startuper/StartUper_page-0001 (1).jpg"
@@ -311,7 +346,7 @@
             <div class="d-flex align-items-center flex-row-reverse">
               <!-- Make a carousel of photos -->
 
-              <div class="img-carousel-1 d-flex flex-row overflow-auto">
+              <div class="img-carousel-1 img-carousel d-flex flex-row overflow-auto">
                 <img src="./img/game/Game_page-0001.jpg" alt="game" />
                 <img src="./img/game/Game_page-0002.jpg" alt="game" />
                 <img src="./img/game/Game_page-0003.jpg" alt="game" />
@@ -330,7 +365,7 @@
             <h2 class="text-black text-left pl-5 mb-4">DiscUs</h2>
             <div class="d-flex align-items-center flex-row">
               <!-- Make a carousel of photos -->
-              <div class="img-carousel-2 d-flex flex-row overflow-auto">
+              <div class="img-carousel-2 img-carousel d-flex flex-row overflow-auto">
                 <img
                   src="./img/chatapp/1_page-0001.jpg"
                   alt="game"
@@ -358,7 +393,7 @@
           <section class="project-1 prjcts ml-4 my-4">
             <h2 class="text-black pl-5 mb-4">Adventure awaits</h2>
             <div class="d-flex flex-row-reverse align-items-center mb-4">
-              <video controls class="w-50 mr-5">
+              <video controls class="w-50 mr-5 video-carousel">
                 <source
                   src="./video/React App - Google Chrome 2022-08-11 09-52-23.mp4"
                   type="video/mp4"
@@ -376,6 +411,7 @@
         <!-- Portgolio ends -->
 
         <!-- Contacts -->
+        
         <section
           class="p-5 contact-links text-white d-flex justify-content-around"
           id="contacts"
@@ -407,9 +443,10 @@
           </div>
 
           <div class="SocialMedia soc-links text-dark">
-            <div class="d-flex">
+            <div class="d-flex ">
               <img src="./img/whatsapp (2).png" alt="whatsapp" />
               <img src="./img/telegram (2).png" alt="telegram" />
+              <br/ >
               <h4>WhatsApp/Telegram</h4>
             </div>
 

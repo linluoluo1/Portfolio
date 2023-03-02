@@ -1,12 +1,10 @@
 .wrapper {
   width: 100%;
   height: 100%;
-  background-image: url("./img/bg-1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: white;
   font-family: "Poppins";
   .navbar {
-    background-color: rgb(213, 213, 213);
+    background: linear-gradient(to left, #e8cbc0, #636fa4);
   }
 }
 
@@ -57,18 +55,18 @@
   max-width: 40%;
 }
 .card {
-  background-color: rgb(213, 213, 213);
+  background-color: inherit;
 }
 .card-img {
   filter: invert(1);
 }
 
 .skills-sect {
-  background-color: rgb(213, 213, 213);
+  background: linear-gradient(to left, #e8cbc0, #636fa4);
 }
 
 .text-cloud {
-  width: 50rem;
+  width: fit-content;
   height: 30rem;
 
   margin-left: auto;
@@ -77,15 +75,19 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   column-gap: 3rem;
+  justify-items: center;
+  align-items: center;
 
   .hard-skills {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
   }
 
   .soft-skills {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
   }
 }
 .projects-wrapper {
@@ -94,6 +96,10 @@
     border-bottom: 2px dashed gray;
     padding-bottom: 10px;
   }
+}
+
+.skills p {
+  text-align: center;
 }
 
 .skills img {
@@ -120,132 +126,22 @@
   }
 }
 
-// Old variant, but i wont delete it just in case
+.img-carousel-3 {
+  img {
+    width: 500px;
+    margin-left: 3rem;
+  }
+}
 
-//    .skill-1 {
-//     position: absolute;
-//     left: 2rem;
-//     top: 3rem;
-//     transform: rotate(-10deg);
-//    }
+.img-carousel-4 {
+  img {
+    width: 500px;
+  }
+}
 
-//    .skill-2 {
-//     position: absolute;
-//     left: 11rem;
-//     top: 1rem;
-//     transform: rotate(15deg);
-//    }
-//    .skill-3 {
-//     position: absolute;
-//     left: 3rem;
-//     top: 8rem;
-//     transform: rotate(20deg);
-//    }
-//    .skill-4 {
-//     position: absolute;
-//     left:8rem;
-//     top: 9rem;
-//     transform: rotate(-20deg);
-//    }
-
-//    .skill-5 {
-//     position: absolute;
-//     left: 13rem;
-//     top: 6.5rem;
-//     transform: rotate(10deg);
-//    }
-
-//    .skill-6 {
-//     position: absolute;
-//     left: 17rem;
-//     top: 1.5rem;
-//     transform: rotate(-15deg);
-//    }
-//    .skill-7 {
-//     position: absolute;
-//     left: 22rem;
-//     top: 2rem;
-//     transform: rotate(20deg);
-//    }
-//    .skill-8 {
-//     position: absolute;
-//     left:2.5rem;
-//     top: 13rem;
-//     transform: rotate(-20deg);
-
-//    }
-//    .need-to-invert{
-//    filter: invert(100%);
-//    }
-//    .skill-9 {
-//     position: absolute;
-//     left:19rem;
-//     top: 6.5rem;
-//     transform: rotate(-20deg);
-
-//    }
-//    .skill-10 {
-//     position: absolute;
-//     left:18rem;
-//     top: 17rem;
-//     transform: rotate(20deg);
-//     }
-//     .skill-11 {
-//       position: absolute;
-//       left:2rem;
-//       top: 19rem;
-//       transform: rotate(-10deg);
-
-//      }
-//      .skill-12 {
-//       position: absolute;
-//       left:8rem;
-//       top: 16rem;
-//       transform: rotate(15deg);
-
-//      }
-//      .skill-13 {
-//       position: absolute;
-//       left:13rem;
-//       top: 12rem;
-//       transform: rotate(-10deg);
-
-//      }
-//      .skill-14 {
-//       position: absolute;
-//       left:23rem;
-//       top: 11rem;
-//       transform: rotate(20deg);
-//       }
-//       .skill-15 {
-//         position: absolute;
-//         left:25rem;
-//         top: 19rem;
-//         transform: rotate(-10deg);
-
-//        }
-//        .skill-16 {
-//         position: absolute;
-//         left:4rem;
-//         top: 23rem;
-//         transform: rotate(15deg);
-
-//        }
-
-//        .skill-17 {
-//         position: absolute;
-//         left:12rem;
-//         top: 21rem;
-//         transform: rotate(-10deg);
-
-//        }
-//        .skill-18 {
-//         position: absolute;
-//         left:20rem;
-//         top: 23rem;
-//         transform: rotate(15deg);
-
-//        }
+.contact-links {
+  background: linear-gradient(to left, #e8cbc0, #636fa4);
+}
 
 @media screen and (max-width: 990px) {
   .heading-text {
@@ -292,6 +188,12 @@
       column-gap: 3rem;
     }
   }
+
+  .img-carousel {
+    img {
+      transform: scale(0.8);
+    }
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -302,9 +204,115 @@
     margin-top: 1rem;
   }
 
-  .intro-text {
+  .intro-text h1 {
     margin-left: auto;
     margin-right: auto;
     max-width: 18.75rem;
+  }
+}
+
+@media screen and (min-width: 499px) {
+  .short-strengths {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .heading-text {
+    width: 12rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .img-author {
+    margin-top: 1rem;
+  }
+
+  .intro-text {
+    h1 {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 12rem;
+      align-items: center;
+    }
+  }
+  .short-strengths h2 {
+    margin: 2rem auto;
+  }
+  .short-strengths ul li {
+    margin: 1rem auto;
+  }
+  .card {
+    display: none;
+  }
+  .skills img {
+    display: none;
+  }
+
+  .img-carousel {
+    img {
+      display: none;
+    }
+    p {
+      width: fit-content;
+    }
+  }
+
+  .video-carousel {
+    display: none;
+  }
+
+  .prjcts {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .prjcts {
+    margin: 0px !important;
+    h2 {
+      text-align: center;
+      margin-right: 0px !important  ;
+      margin-left: 0px !important;
+      padding-left: 0px !important ;
+      padding-right: 0px !important;
+      margin-top: 1rem;
+    }
+  }
+
+  .prjcts p {
+    width: fit-content;
+  }
+
+  .img-carousel-1 {
+    width: 0px;
+  }
+
+  .project-2 {
+    div {
+      justify-content: center;
+      height: fit-content;
+    }
+  }
+
+  .img-carousel-2 {
+    width: 0px;
+  }
+
+  .project-3 {
+    div {
+      justify-content: center;
+      height: fit-content;
+    }
+  }
+
+  .contact-links {
+    justify-content: center;
+  }
+
+  .soc-links div img {
+    display: none;
   }
 }
